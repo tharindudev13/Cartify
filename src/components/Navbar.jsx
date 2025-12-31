@@ -1,9 +1,21 @@
 import { NavLink } from 'react-router'
 import Logo from '../assets/logo_bg_rm.png'
+import { useDispatch, useSelector } from 'react-redux'
+import { useEffect } from 'react'
 
-const test = 1
+
 
 function Navbar() {
+
+    const test = 1
+
+    const userName = useSelector((state) => {return state.user.userName})
+
+    useEffect(() => {
+        console.log(userName);
+    
+    })
+
   return (
     <>
         <div className="navbar">
@@ -25,7 +37,7 @@ function Navbar() {
                 <button>Login</button>
             )}
              {test == 1 && (
-                <h3 className='user'>Hello User !</h3>
+                <h3 className='user'>Hello {userName} !</h3>
             )}
 
         </div>

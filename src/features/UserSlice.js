@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    userName: '',
+    userName: 'Tharindu',
     age: 0,
     email: '',
     address: '',
@@ -26,3 +26,6 @@ const UserSlice = createSlice({
         }
     }
 })
+
+export default UserSlice.reducer
+export const {setUserDetails} = UserSlice.actions
