@@ -30,6 +30,12 @@
   display: inline-block;
   padding: 5px 10px;
   margin: 0 10px;
+  
+
+}
+
+a{
+  color: #5292f9;
 }
 
 a.active{
@@ -41,8 +47,8 @@ a.active{
 }
 
 a:hover{
-  /* color: #1551d4; */
-  color: #5292f9;
+  color: #1551d4;
+  /* color: #5292f9; */
 
 
 }
@@ -90,4 +96,64 @@ a:hover{
   font-size: 0.9em;
   font-weight: 500;
   align-items: center;
+}
+
+
+.product{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card{
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
+  padding: 10px 25px;
+  width: 400px;
+}
+
+.details{
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+
+}
+
+.product-card img{
+  margin-left: 110px;
+}
+
+.product-card .title{
+  font-weight: 550;
+  width: 350px;
+}
+
+.product-card .price{
+  font-weight: 400;
+  color: rgb(248, 195, 4);
+}
+
+.product-card .in-stock{
+  color: #4cd12e;
+  border:1px solid #4cd12e;
+  padding: 0 2px;
+  width: 80px;
+  margin-right: 15px;
+}
+
+.product-card .low-stock{
+  color: #f82a0a;
+  border:1px solid #f82a0a;
+  padding: 0 2px;
+  width: 80px;
+  margin-right: 15px;
+}
+
+.product-card .rate{
+  width: 170px;
+}
+
+.product-card .category{
+  margin-left: -10px;
+  width: 70px;
 }

@@ -2,6 +2,7 @@ import { NavLink } from 'react-router'
 import Logo from '../assets/logo_bg_rm.png'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
+import Products from '../pages/Products'
 
 
 
@@ -22,10 +23,10 @@ function Navbar() {
             <img src={Logo} alt="" />
             <div className="menu-items">
                 <ul>
-                    <NavLink><li>All Products</li></NavLink>
-                    <NavLink><li>Cart</li></NavLink>
-                    <NavLink><li>My Profile</li></NavLink>
-                    <NavLink><li>Contact Us</li></NavLink>
+                    <NavLink to='/'><li>All Products</li></NavLink>
+                    <NavLink to='/cart'><li>Cart</li></NavLink>
+                    <NavLink to='/profile'><li>My Profile</li></NavLink>
+                    <NavLink to='/contact'><li>Contact Us</li></NavLink>
                 </ul>
 
             </div>
