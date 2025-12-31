@@ -3,8 +3,9 @@ import Product from "../components/Product"
 function Products(){
 
     return(
-        <>
-            <h1>All Products</h1>
+        <>  
+            
+            <h2 style={{paddingLeft:20}}>All Products</h2>
             <Product />
         </>
     )

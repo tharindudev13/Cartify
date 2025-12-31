@@ -29,7 +29,7 @@ const initialState = [{
         {
           "rating": 3,
           "comment": "Would not recommend!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "Apr 04, 2025",
           "reviewerName": "Eleanor Collins",
           "reviewerEmail": "eleanor.collins@x.dummyjson.com"
         },

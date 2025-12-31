@@ -6,17 +6,28 @@ import Products from './pages/Products'
 import Cart from './pages/Cart'
 import Profile from './pages/Profile'
 import Contact from './pages/Contact'
+import ProductDetails from './components/ProductDetails'
+import Home from './pages/Home'
+import { useSelector } from 'react-redux'
+
 
 
 function App() {
 
+  const products = useSelector((state) => {return state.product})
+
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<RootLayout />}>
-        <Route index element = {<Products />} />
+        <Route index element = {<Home />} />
+        <Route path='product' element = {<Products />} />
         <Route path='cart' element = {<Cart />} />
         <Route path='profile' element = {<Profile />} />
         <Route path='contact' element = {<Contact />} />
+        {products.map((product)=>(
+            <Route path={`/details/${product.title}`} element={<ProductDetails id={product.id} />} />
+        ))}
 
 
       </Route>

@@ -23,10 +23,10 @@ function Navbar() {
             <img src={Logo} alt="" />
             <div className="menu-items">
                 <ul>
-                    <NavLink to='/'><li>All Products</li></NavLink>
+                    <NavLink to='/'><li>Home</li></NavLink>
+                    <NavLink to='/product'><li>All Products</li></NavLink>
                     <NavLink to='/cart'><li>Cart</li></NavLink>
                     <NavLink to='/profile'><li>My Profile</li></NavLink>
-                    <NavLink to='/contact'><li>Contact Us</li></NavLink>
                 </ul>
 
             </div>
