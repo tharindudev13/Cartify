@@ -15,7 +15,7 @@ function Review(props){
         {item.map((review,index)=>(
             <div className="comments" key={index}>
             {review.reviewerName} <br />
-            {review.rating} <br />
+            ⭐{review.rating}/5.0 <br />
             {review.reviewerEmail} <br />
             {review.comment} <br />
 
