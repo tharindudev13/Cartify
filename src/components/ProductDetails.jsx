@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux"
+import Review from "./Review"
 
 
 const ProductDetails = (props) =>{
@@ -14,27 +15,29 @@ const ProductDetails = (props) =>{
             <p>
             {item.title} <br />
             {item.description} <br />
-            Rating {item.rating} out of 5 <br />
-            Category: {item.category} <br />
-            Brand: {item.brand} <br />
-            Stock available: {item.stock} <br />
-            Discount: {item.discountPercentage}% <br />
+            <span className="topic">Rating:</span>&nbsp; {item.rating} out of 5 <br />
+            <span className="topic">Category:</span> &nbsp;{item.category} <br />
+            <span className="topic">Brand:</span>&nbsp; {item.brand} <br />
+            <span className="topic">Stock Available:</span>&nbsp; {item.stock} <br />
+            <span className="topic">Discount:</span>&nbsp; {item.discountPercentage}% <br />
             {item.weight} kg <br />
-            dimensions:
+            <span className="topic">Dimensions:</span>
                 <ul>
-                    <li>Width: {item.dimensions.width} cm</li>
-                    <li>Height: {item.dimensions.height} cm</li>
-                    <li>Depth: {item.dimensions.depth} cm</li>
+                    <li><span className="topic">Width:</span>&nbsp; {item.dimensions.width} cm</li>
+                    <li><span className="topic">Height:</span> &nbsp;{item.dimensions.height} cm</li>
+                    <li><span className="topic">Depth:</span>&nbsp; {item.dimensions.depth} cm</li>
                 </ul>
             </p>
 
             <h2>Warranty & Shipping</h2>
+            <p>
             {item.warrantyInformation} <br />
             {item.shippingInformation} <br />
             {item.returnPolicy}
-            <p>
-
             </p>
+            <h2>Ratings & Reviews</h2>
+
+            <Review item ={item} />
         </div>
         
         </>

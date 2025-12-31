@@ -121,7 +121,7 @@
 .product-card{
   box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
   padding: 10px 25px;
-  width: 400px;
+  width: 380px;
 }
 
 .details{
@@ -162,17 +162,32 @@
 }
 
 .product-card .rate{
-  width: 170px;
+  width: 160px;
   color: #78797a;
 }
 
 .product-card .category{
   margin-left: -10px;
-  width: 70px;
+  width: 60px;
   color: #787878;
+}
+
+.item-details{
+  padding: 20px;
 }
 
 .item-details img{
   height: 400px;
   width: auto;
+}
+
+.item-details p{
+  margin-left: 20px;
+  font-weight: 390;
+  font-size: 0.9em;
+}
+
+.item-details .topic{
+  font-weight: 450;
+  font-size: 1.1em;
 }
