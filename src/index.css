@@ -1,0 +1,92 @@
+*{
+  font-family: poppins;
+}
+
+.navbar{
+  display: flex;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.05);
+
+  
+}
+
+.navbar img{
+  padding: 10px;
+  margin: 20px;
+  width: 150px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.05);
+
+}
+
+.navbar ul{
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin: 25px 25px 10px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.05);
+
+}
+
+.navbar ul li{
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+
+a.active{
+  /* color: #5292f9; */
+  color: #65d74b;
+
+
+  
+}
+
+a:hover{
+  /* color: #1551d4; */
+  color: #5292f9;
+
+
+}
+
+.navbar input{
+  height: 25px;
+  margin: 35px -5px 5px 15px;
+  border-radius:5px;
+  width: 220px;
+  border: 1.5px solid #E5E7EB;
+  padding-left: 10px;
+}
+
+.navbar input::placeholder{
+  color: #ced0d3;
+
+}
+
+.navbar button{
+  background-color: #65d74b;
+  border: none;
+  height: 30px;
+  width: 80px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 35px;
+  
+}
+.navbar button:hover{
+  background-color: #4cd12e;
+  
+}
+
+.navbar .user{
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.05);
+  border-radius: 10px;
+  margin: 33px 0px;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 0.9em;
+  font-weight: 500;
+  align-items: center;
+}

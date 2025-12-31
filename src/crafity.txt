@@ -1,0 +1,33 @@
+---FEATURES---
+    --Browse products
+    --See details and reviews on a product
+    --Add to a cart
+    --Login or logout
+    --Change profile details
+    --Change theame (in the future)
+
+---PAGES---
+    --All products
+    --Cart
+    --Profile
+    --Contact Us
+    --Login page
+
+---Data to store---
+    --User
+        *Name
+        *Address
+        *Country
+        *email
+        *Phone number
+        *profile photo
+
+    --Cart 
+        *Item Name
+        *Quantity
+        *Price
+        *Total
+
+
+---Data to fetch---
+    --product details
