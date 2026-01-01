@@ -125,6 +125,18 @@
   width: 380px;
 }
 
+.product-card .tags{
+  display: flex;
+  gap: 20px;
+}
+.product-card .tag{
+  background-color: #ced0d3;
+  color: #FFFFFF;
+  padding: 0 5px;
+  border-radius: 3px;
+  font-size: 0.8em;
+}
+
 .details{
   display: flex;
   gap: 30px;
@@ -143,7 +155,7 @@
 
 .product-card .price{
   font-weight: 400;
-  color: rgb(248, 195, 4);
+  color: #f8c304;
 }
 
 .product-card .in-stock{
@@ -173,8 +185,26 @@
   color: #787878;
 }
 
+.product-card .buy{
+  margin: 15px 0px;
+  display: flex;
+  gap: 60px;
+}
+
+.product-card .buy button{
+  padding: 5px 10px;
+  width: 160px;
+  border: none;
+  color: white;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .item-details{
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .item-details img{
@@ -186,9 +216,75 @@
   margin-left: 20px;
   font-weight: 390;
   font-size: 0.9em;
+  background-color: #f3f3f4;
+  padding: 20px;
+  border-radius: 5px;
+  width: 450px;
+
 }
 
 .item-details .topic{
   font-weight: 450;
   font-size: 1.1em;
+  margin-right: 10px;
+  margin-left: -5px;
+  
+}
+
+
+.item-details .meta img{
+  width: 70px;
+  height: auto;
+  background-color: #5292f9;
+  margin: -100px 0 47px 340px;
+}
+
+.item-details .meta p{
+  padding: 17px;
+}
+
+.review{
+  padding: 0px 15px 15px;
+}
+
+.comments{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.comment{
+  display: grid;
+  background-color: #f3f3f4;
+  padding: 15px;
+  border-radius: 5px;
+
+}
+
+.comment .name{
+  font-size: 1.1em;
+  display: flex;
+  font-weight: 500;
+}
+
+.comment .name img{
+  width: 45px;
+  height: auto;
+  margin-top: -5px;
+}
+
+.comment .email{
+  font-size: 0.7em;
+  margin: -22px 0px 10px 50px;
+  font-weight: 300;
+}
+
+.comment .rate{
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.comment .text{
+  margin-top: 5px;
 }

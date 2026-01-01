@@ -29,21 +29,21 @@ const initialState = [{
         {
           "rating": 3,
           "comment": "Would not recommend!",
-          "date": "Apr 04, 2025",
+          "date": "04/04/2025",
           "reviewerName": "Eleanor Collins",
           "reviewerEmail": "eleanor.collins@x.dummyjson.com"
         },
         {
           "rating": 4,
           "comment": "Very satisfied!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Lucas Gordon",
           "reviewerEmail": "lucas.gordon@x.dummyjson.com"
         },
         {
           "rating": 5,
           "comment": "Highly impressed!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Eleanor Collins",
           "reviewerEmail": "eleanor.collins@x.dummyjson.com"
         }
@@ -89,21 +89,21 @@ const initialState = [{
         {
           "rating": 5,
           "comment": "Great product!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Savannah Gomez",
           "reviewerEmail": "savannah.gomez@x.dummyjson.com"
         },
         {
           "rating": 4,
           "comment": "Awesome product!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Christian Perez",
           "reviewerEmail": "christian.perez@x.dummyjson.com"
         },
         {
           "rating": 1,
           "comment": "Poor quality!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Nicholas Bailey",
           "reviewerEmail": "nicholas.bailey@x.dummyjson.com"
         }
@@ -149,21 +149,21 @@ const initialState = [{
         {
           "rating": 4,
           "comment": "Would buy again!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Alexander Jones",
           "reviewerEmail": "alexander.jones@x.dummyjson.com"
         },
         {
           "rating": 5,
           "comment": "Highly impressed!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Elijah Cruz",
           "reviewerEmail": "elijah.cruz@x.dummyjson.com"
         },
         {
           "rating": 1,
           "comment": "Very dissatisfied!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Avery Perez",
           "reviewerEmail": "avery.perez@x.dummyjson.com"
         }
@@ -209,21 +209,21 @@ const initialState = [{
         {
           "rating": 4,
           "comment": "Great product!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Liam Garcia",
           "reviewerEmail": "liam.garcia@x.dummyjson.com"
         },
         {
           "rating": 5,
           "comment": "Great product!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Ruby Andrews",
           "reviewerEmail": "ruby.andrews@x.dummyjson.com"
         },
         {
           "rating": 5,
           "comment": "Would buy again!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Clara Berry",
           "reviewerEmail": "clara.berry@x.dummyjson.com"
         }
@@ -269,21 +269,21 @@ const initialState = [{
         {
           "rating": 2,
           "comment": "Poor quality!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Benjamin Wilson",
           "reviewerEmail": "benjamin.wilson@x.dummyjson.com"
         },
         {
           "rating": 5,
           "comment": "Great product!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Liam Smith",
           "reviewerEmail": "liam.smith@x.dummyjson.com"
         },
         {
           "rating": 1,
           "comment": "Very unhappy with my purchase!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Clara Berry",
           "reviewerEmail": "clara.berry@x.dummyjson.com"
         }
@@ -329,21 +329,21 @@ const initialState = [{
         {
           "rating": 2,
           "comment": "Very disappointed!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Layla Young",
           "reviewerEmail": "layla.young@x.dummyjson.com"
         },
         {
           "rating": 4,
           "comment": "Fast shipping!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Daniel Cook",
           "reviewerEmail": "daniel.cook@x.dummyjson.com"
         },
         {
           "rating": 3,
           "comment": "Not as described!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Jacob Cooper",
           "reviewerEmail": "jacob.cooper@x.dummyjson.com"
         }
@@ -391,21 +391,21 @@ const initialState = [{
         {
           "rating": 4,
           "comment": "Highly impressed!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Ruby Andrews",
           "reviewerEmail": "ruby.andrews@x.dummyjson.com"
         },
         {
           "rating": 5,
           "comment": "Awesome product!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Leah Henderson",
           "reviewerEmail": "leah.henderson@x.dummyjson.com"
         },
         {
           "rating": 5,
           "comment": "Very happy with my purchase!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Xavier Wright",
           "reviewerEmail": "xavier.wright@x.dummyjson.com"
         }
@@ -453,21 +453,21 @@ const initialState = [{
         {
           "rating": 5,
           "comment": "Great value for money!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Nicholas Bailey",
           "reviewerEmail": "nicholas.bailey@x.dummyjson.com"
         },
         {
           "rating": 4,
           "comment": "Great value for money!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Penelope Harper",
           "reviewerEmail": "penelope.harper@x.dummyjson.com"
         },
         {
           "rating": 4,
           "comment": "Great product!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Emma Miller",
           "reviewerEmail": "emma.miller@x.dummyjson.com"
         }
@@ -515,21 +515,21 @@ const initialState = [{
         {
           "rating": 4,
           "comment": "Would buy again!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Mateo Bennett",
           "reviewerEmail": "mateo.bennett@x.dummyjson.com"
         },
         {
           "rating": 4,
           "comment": "Highly recommended!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Nolan Gonzalez",
           "reviewerEmail": "nolan.gonzalez@x.dummyjson.com"
         },
         {
           "rating": 5,
           "comment": "Very happy with my purchase!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Aurora Lawson",
           "reviewerEmail": "aurora.lawson@x.dummyjson.com"
         }
@@ -577,21 +577,21 @@ const initialState = [{
         {
           "rating": 1,
           "comment": "Very dissatisfied!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Cameron Perez",
           "reviewerEmail": "cameron.perez@x.dummyjson.com"
         },
         {
           "rating": 5,
           "comment": "Very happy with my purchase!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Daniel Cook",
           "reviewerEmail": "daniel.cook@x.dummyjson.com"
         },
         {
           "rating": 4,
           "comment": "Highly impressed!",
-          "date": "2025-04-30T09:41:02.053Z",
+          "date": "2025/04/30",
           "reviewerName": "Addison Wright",
           "reviewerEmail": "addison.wright@x.dummyjson.com"
         }

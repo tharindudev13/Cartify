@@ -8,7 +8,6 @@ import Products from '../pages/Products'
 
 function Navbar() {
 
-    const test = 1
 
     const userName = useSelector((state) => {return state.user.userName})
 
@@ -34,10 +33,10 @@ function Navbar() {
 
                 <button>Search</button>
 
-            {test == 0 && (
+            {userName == '' && (
                 <button>Login</button>
             )}
-             {test == 1 && (
+             {!userName == '' && (
                 <h3 className='user'>Hello {userName} !</h3>
             )}
 

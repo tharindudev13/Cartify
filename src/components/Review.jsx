@@ -1,27 +1,31 @@
-import { useSelector } from "react-redux"
-
+import Image from '../assets/logo.svg'
 function Review(props){
-
-    // const products = useSelector((state) => {return state.product})
-
     
     const item = props.item.reviews
     console.log(item);
     
+    
 
     return(
         <>
-
+        <div className="comments">
         {item.map((review,index)=>(
-            <div className="comments" key={index}>
-            {review.reviewerName} <br />
-            ⭐{review.rating}/5.0 <br />
-            {review.reviewerEmail} <br />
-            {review.comment} <br />
+            <div className="comment" key={index}>
+            <span className="name">
+               <img src={Image} alt="" />{review.reviewerName}
+                </span>
+            <span className="email">{review.reviewerEmail} </span>
+            <span className="rate">
+                {'⭐'.repeat(review.rating)} &nbsp;&nbsp;{review.date}
+            </span>
+            <span className="text">{review.comment} </span>
 
 
         </div>
         ))}
+        </div>
+
+        
         
         </>
     )

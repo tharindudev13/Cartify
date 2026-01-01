@@ -6,7 +6,11 @@ import { Link } from "react-router"
 function Product(){
 
     const products = useSelector((state) => {return state.product})
-    
+    // const tags = products.tags
+    // useEffect(() =>{
+    //     console.log(tags);
+        
+    // })
 
     return(
         <>
@@ -15,6 +19,11 @@ function Product(){
                 <div className="product-card" key={product.id}>
                     <Link to={`/details/${product.title}`}>
                     <img src={Image} alt={product.id} />
+                    <div className="tags">
+                        {product.tags.map((tag) =>(
+                            <span className="tag">{tag}</span>
+                        ))}
+                    </div>
                     <div className="details">
                         <span className="title">{product.title}</span>
                         <span className="price">${product.price}</span>
@@ -31,6 +40,10 @@ function Product(){
                         <span className="rate">⭐ {product.rating}/5</span>
                         <span className="category">{product.category}</span>
 
+                    </div>
+                    <div className="buy">
+                        <button style={{backgroundColor : "#4cd12e"}}>Buy Now</button>
+                        <button style={{backgroundColor : "#f8c304"}}>Add to Cart</button>
                     </div>
                     </Link>
                 </div>
