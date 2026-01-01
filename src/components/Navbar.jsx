@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router'
+import { NavLink, useNavigate } from 'react-router'
 import Logo from '../assets/logo_bg_rm.png'
 import { useDispatch, useSelector } from 'react-redux'
 import { useEffect } from 'react'
@@ -9,10 +9,14 @@ import Products from '../pages/Products'
 function Navbar() {
 
 
-    const userName = useSelector((state) => {return state.user.userName})
+    const user = useSelector((state) => {return state.user})
+    const userName = user.userName
+
+    const link = user.isLoggedin ? '/profile' : '/login'
+    const navigate = useNavigate()
 
     useEffect(() => {
-        console.log(userName);
+        console.log(user.isLoggedin);
     
     })
 
@@ -25,18 +29,20 @@ function Navbar() {
                     <NavLink to='/'><li>Home</li></NavLink>
                     <NavLink to='/product'><li>All Products</li></NavLink>
                     <NavLink to='/cart'><li>Cart</li></NavLink>
-                    <NavLink to='/profile'><li>My Profile</li></NavLink>
+                    <NavLink to={link}><li>My Profile</li></NavLink>
                 </ul>
 
             </div>
                 <input type="text" placeholder='Enter a product name....'/>
 
                 <button>Search</button>
+            
+            {/* {!user.isloggedin ? <button>Login</button> : <h3 className='user'>Hello {userName} !</h3>} */}
 
-            {userName == '' && (
-                <button>Login</button>
+            {!user.isLoggedin && (
+                <button onClick={navigate('login')}>Login</button>
             )}
-             {!userName == '' && (
+             {user.isLoggedin && (
                 <h3 className='user'>Hello {userName} !</h3>
             )}
 
