@@ -32,11 +32,9 @@ function App() {
         ))}
         <Route path='login' element={<Login />} />
         <Route path='*' element={<Error />} />
-
-
-
       </Route>
-    )
+    ),
+    { basename: '/Cartify' }
   )
 
   return (
