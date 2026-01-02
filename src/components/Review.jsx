@@ -1,4 +1,6 @@
 import Image from '../assets/logo.svg'
+import { PiUserBold, PiUserCircle ,PiUserLight } from "react-icons/pi";
+import { MdOutlineStarBorder } from "react-icons/md";
 function Review(props){
     
     const item = props.item.reviews
@@ -12,7 +14,9 @@ function Review(props){
         {item.map((review,index)=>(
             <div className="comment" key={index}>
             <span className="name">
-               <img src={Image} alt="" />{review.reviewerName}
+                {/* <PiUserBold className='user' /> */}
+               <img src={Image} alt="" className='user'/>
+               {review.reviewerName}
                 </span>
             <span className="email">{review.reviewerEmail} </span>
             <span className="rate">

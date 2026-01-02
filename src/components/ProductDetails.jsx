@@ -48,7 +48,7 @@ const ProductDetails = (props) =>{
                 <span className="topic">Updated:</span> {item.meta.updatedAt} <br />
                 <span className="topic">Barcode:</span> {item.meta.barcode}
                 </p>
-                <img src={Image} alt="" />
+                <img src={item.meta.qrCode} alt="" />
             </div>
 
 

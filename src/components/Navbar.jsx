@@ -15,10 +15,10 @@ function Navbar() {
     const link = user.isLoggedin ? '/profile' : '/login'
     const navigate = useNavigate()
 
-    useEffect(() => {
-        console.log(user.isLoggedin);
+    // useEffect(() => {
+    //     console.log(user.isLoggedin);
     
-    })
+    // })
 
   return (
     <>
@@ -37,14 +37,7 @@ function Navbar() {
 
                 <button>Search</button>
             
-            {/* {!user.isloggedin ? <button>Login</button> : <h3 className='user'>Hello {userName} !</h3>} */}
-
-            {!user.isLoggedin && (
-                <button onClick={navigate('login')}>Login</button>
-            )}
-             {user.isLoggedin && (
-                <h3 className='user'>Hello {userName} !</h3>
-            )}
+            {!user.isLoggedin ? <button onClick={() => navigate('/login')}>Login</button> : <h3 className='user'>Hello {userName} !</h3>}
 
         </div>
     </>
