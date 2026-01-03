@@ -43,11 +43,13 @@ function Product(){
                         <span className="category">{product.category}</span>
 
                     </div>
+                    
+                    </Link>
+
                     <div className="buy">
                         <button style={{backgroundColor : "#4cd12e"}}>Buy Now <HiOutlineShoppingBag className="icon"/> </button>
                         <button style={{backgroundColor : "#f8c304"}}>Add to Cart <AiOutlineShoppingCart className="icon"/></button>
                     </div>
-                    </Link>
                 </div>
             ))}
             </div>

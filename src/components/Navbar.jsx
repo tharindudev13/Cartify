@@ -10,7 +10,7 @@ function Navbar() {
 
 
     const user = useSelector((state) => {return state.user})
-    const userName = user.userName
+    const userName = user.FName
 
     const link = user.isLoggedin ? '/profile' : '/login'
     const navigate = useNavigate()

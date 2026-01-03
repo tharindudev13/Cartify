@@ -1,14 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    userName:'Tharindu',
+    FName:'Tharindu',
+    LName: '',
     age: 0,
     email: '',
     address: '',
     country: '',
     phone: '',
     profilePic: '',
-    isLoggedin: true
+    isLoggedin: false
 }
 
 const UserSlice = createSlice({
@@ -16,14 +17,16 @@ const UserSlice = createSlice({
     initialState,
     reducers: {
         login: (state, action) => {
-            const { userName, age, email, address, country, phone, profilePic } = action.payload;
-            state.userName = userName;
+            const { fname,lname, age, email, address, country, phone } = action.payload;
+            state.FName = fname;
+            state.LName = lname;
             state.age = age;
             state.email = email;
             state.address = address;
             state.country = country;
             state.phone = phone;
-            state.profilePic = profilePic;
+            state.isLoggedin = true
+            // state.profilePic = profilePic;
         }
     }
 })
