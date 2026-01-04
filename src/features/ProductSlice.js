@@ -799,7 +799,7 @@ const initialState = [{
     },
     {
       "id": 14,
-      "title": "Knoll Saarinen Executive Conference Chair",
+      "title": "Executive Conference Chair",
       "description": "The Knoll Saarinen Executive Conference Chair is a modern and ergonomic chair, perfect for your office or conference room with its timeless design.",
       "category": "furniture",
       "price": 499.99,

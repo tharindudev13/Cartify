@@ -22,8 +22,8 @@ function Product(){
                     <Link to={`/details/${product.title}`}>
                     <img src={product.thumbnail} alt={product.id} />
                     <div className="tags">
-                        {product.tags.map((tag) =>(
-                            <span className="tag">{tag}</span>
+                        {product.tags.map((tag,index) =>(
+                            <span key={index} className="tag">{tag}</span>
                         ))}
                     </div>
                     <div className="details">

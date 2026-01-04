@@ -123,7 +123,7 @@
   box-shadow: 0 0 30px 0 rgba(0,0,0,0.1);
   border-radius: 10px;
   padding: 10px 25px;
-  width: 380px;
+  width: 27vw;
 }
 
 .product-card .tags{
@@ -360,4 +360,21 @@
   margin-bottom: -5px;
   width: 20px;
   height: auto;
+}
+
+
+/* Product card  responsive*/
+
+
+@media all and (width<1380px){
+
+  .product{
+    /* grid-template-columns: repeat(2,1fr); */
+  }
+
+  .product-card{
+    /* grid-template-columns: repeat(2,1fr); */
+    /* width: 80%; */
+  }
+
 }
