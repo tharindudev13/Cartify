@@ -10,7 +10,7 @@ import ProductDetails from './components/ProductDetails'
 import Home from './pages/Home'
 import { useSelector } from 'react-redux'
 import Login from './pages/Login'
-import Error from './components/Error'
+import notFound from './components/404' 
 
 
 
@@ -31,7 +31,7 @@ function App() {
             <Route path={`/details/${product.title}`} element={<ProductDetails id={product.id} />} />
         ))}
         <Route path='login' element={<Login />} />
-        <Route path='*' element={<Error />} />
+        <Route path='*' element={<notFound />} />
       </Route>
     ),
     { basename: '/Cartify' }
